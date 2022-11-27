@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Disha2.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span> Disha Baghel</span> <br> From National Institute of Technology, Srinagar</h1>
+            </div>
+        </div>
+    </div>
+    <!-- about  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Dishaim4.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p >
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias a, cupiditate eaque quis 
+                        sit consequuntur quisquam hic quia esse numquam cumque, optio saepe itaque distinctio deleniti 
+                        velit obcaecati voluptatibus eum! Lorem ipsum dolor sit amet consectetur, adipisicing 
+                        elit. Dolorum sunt commodi quasi et, maxime eum sit non, inventore laudantium similique ipsam 
+                        laboriosam nobis quia tenetur? Quasi corporis perspiciatis obcaecati unde.
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick=" opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Website Development</li>
+                            <li><span>App Development</span><br> Android App Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Present</span><br> Content Writer at ZER0D4Y club</li>
+                            <li><span>2020 - 2021</span><br> Web Development Intern at Webcab</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - Present</span><br> BTech in Computer Science and Engineering <br> 
+                                National Institute of Techonlogy Srinagar</li>
+                            <li><span>2018 - 2020</span><br> KDB Public School</li>
+                            <li><span>2006 - 2018</span><br> Ingraham Institute English School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="style.js">
+        // var tablinks = document.getElementsByClassName("tab-links");
+        // var tabcontents = document.getElementsByClassName("tab-contents");
+
+        // function opentab(tabname){
+        //     for(tablink of tablinks){
+        //         tablink.classList.remove("active-link");
+        //     }
+        //     for(tabcontent of tabcontents){
+        //         tabcontent.classList.remove("active-tab");
+        //     }
+        //     event.currentTarget.classList.add("active-link")
+        //     document.getElementById(tabname).classList.add("active-tab");
+        // }
+    </script>
+
+</body>
+</html>
