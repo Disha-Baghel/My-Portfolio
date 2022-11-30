@@ -14,14 +14,14 @@
             <nav>
                 <img src="images/Disha2.jpg" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
+                <p>Android Developer</p>
                 <h1>Hi, I'm <span> Disha Baghel</span> <br> From National Institute of Technology, Srinagar</h1>
             </div>
         </div>
@@ -36,11 +36,12 @@
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
                     <p >
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias a, cupiditate eaque quis 
+                        <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias a, cupiditate eaque quis 
                         sit consequuntur quisquam hic quia esse numquam cumque, optio saepe itaque distinctio deleniti 
                         velit obcaecati voluptatibus eum! Lorem ipsum dolor sit amet consectetur, adipisicing 
                         elit. Dolorum sunt commodi quasi et, maxime eum sit non, inventore laudantium similique ipsam 
-                        laboriosam nobis quia tenetur? Quasi corporis perspiciatis obcaecati unde.
+                        laboriosam nobis quia tenetur? Quasi corporis perspiciatis obcaecati unde. -->
+                        I am an Android Development Enthusiast learning Android Development
                     </p>
                     <div class="tab-title">
                         <p class="tab-links active-link" onclick=" opentab('skills')">Skills</p>
@@ -79,31 +80,75 @@
         <h1 class="subtitle">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="images/work1.jpg" alt="">
+                <img src="images/work1.jpg">
+                <div class="layer">
+                    <h3>Calendar Application</h3>
+                    <p>
+                        The system provides you with a simple way to 
+                        display the full calendar. 
+                    </p>
+                    <a href="https://github.com/Disha-Baghel/My-Calender"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.jpg">
+                <div class="layer">
+                    <h3>BMI Calculator</h3>
+                    <p>
+                        This mobile application calculates your BMI.
+                    </p>
+                    <a href="https://github.com/Disha-Baghel/BMI-Calculator"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work4.png">
+                <div class="layer">
+                    <h3>Tic Tac Toe</h3>
+                    <p>
+                        This is a classic tic-tac-toe game mobile application 
+                    </p>
+                    <a href="https://github.com/Disha-Baghel/Tic-Tac-Toe"><i class="fa-solid fa-link"></i></a>
             </div>
         </div>
     </div>
 </div>
+<!-- Contact  -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me </h1>
+                <p>
+                    <a href="#"><i class="fa-sharp fa-solid fa-envelope"></i></a>
+                    bagheldisha708@gmail.com
+                </p>
+                <p>
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    1234567890
+                </p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/disha-baghel-624752229"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/dishabaghel16"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/emiko.sunshine"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Disha-Baghel?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form type="submit" action="mailto: bagheldisha708@gmail.com" value="send" >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright"></div>
+</div>
 
 
 
-
-
-    <script src="update.js">
-        // var tablinks = document.getElementsByClassName("tab-links");
-        // var tabcontents = document.getElementsByClassName("tab-contents");
-
-        // function opentab(tabname){
-        //     for(tablink of tablinks){
-        //         tablink.classList.remove("active-link");
-        //     }
-        //     for(tabcontent of tabcontents){
-        //         tabcontent.classList.remove("active-tab");
-        //     }
-        //     event.currentTarget.classList.add("active-link")
-        //     document.getElementById(tabname).classList.add("active-tab");
-        // }
-    </script>
+<script src="update.js"></script>
 
 </body>
 </html>
